@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="left-container">
-        <div class="logo-banner"></div>
+        <div class="logo-banner">ODIN <img src="odin-llogo.png" alt="odin logo"></div>
     </div>
     <div class="right-container">
         <div class="text-container">
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel risus neque. Aenean mollis vehicula massa, 
-                    vel tristique lectus porttitor sed. Fusce sollicitudin, turpis ac rhoncus bibendum, enim metus lacinia.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.</p>
+                <p>You know you want to.</p>
             </div>
         </div>
         <div class="form-container">
@@ -26,35 +26,35 @@
             <form action="#" method="get" id="form">
                 <div class="fname">
                     <label for="fname">First name</label>
-                    <input type="text" name="fname" id="fname">
+                    <input type="text" name="fname" id="fname" placeholder="John" required>
                 </div>
                 <div class="lname">
                     <label for="lname">Last name</label>
-                    <input type="text" name="lname" id="lname">
+                    <input type="text" name="lname" id="lname" placeholder="Doe" required>
                 </div>
                 <div class="mail">
                     <label for="mail">Email adress</label>
-                    <input type="mail" name="user-mail" id="mail">
+                    <input type="mail" name="user-mail" id="mail" placeholder="something.smthng@some.thing" required>
                 </div>
                 <div class="phone">
                     <label for="phone">Phone number</label>
-                    <input type="tel" name="phone-number" id="phone">
+                    <input type="tel" name="phone-number" id="phone" pattern="((\+48|0048) \d{3} \d{3} \d{3})|(\+48|0048)\d{9}" placeholder="+48 555 333 222" required>
                 </div>
                 <div>
                     <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd">
+                    <input type="password" name="pwd" id="pwd" required>
                 </div>
                 <div>
                     <label for="confirm-pwd">Confirm password</label>
-                    <input type="password" name="" id="confirm-pwd">
+                    <input type="password" name="" id="confirm-pwd" required>
                 </div>
             </form>
 
         </div>
-        <div class="button-container">
-            <button form="form">Create Account</button>
-            <p>Already have an account? Log in</p>
-        </div>
+            <div class="button-container">
+                <button form="form">Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div> 
     </div>
 </body>
 </html>
