@@ -78,7 +78,7 @@ body {
     display: flex;
     align-items: flex-end;
     /* border: 1px solid black; */
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 20px;
     /* background-color: lightcoral; */
 }
 
@@ -149,6 +149,30 @@ input:focus:invalid {
 
 input:valid {
     border: 3px solid #339933;
+}
+
+#pwd ~ span {
+    position: relative;
+}
+
+#pwd:invalid ~ span::after {
+    content: "must be at least 8 characters long";
+    font-size: .8rem;
+    color: #ff9933;
+    margin-left: .1rem;
+    position: absolute;
+}
+
+.pwdConfirmInvalid {
+    border: 3px solid #e6005c;
+}
+
+.pwdConfirmInvalid ~ span::after {
+    content: "password do not match";
+    font-size: .8rem;
+    color: #ff471a;
+    margin-left: .1rem;
+    position: absolute;
 }
 
 

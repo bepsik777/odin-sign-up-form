@@ -42,19 +42,23 @@
                 </div>
                 <div>
                     <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" required>
+                    <input type="password" name="pwd" id="pwd" required minlength="8" maxlength="20">
+                    <span></span>
                 </div>
                 <div>
                     <label for="confirm-pwd">Confirm password</label>
-                    <input type="password" name="" id="confirm-pwd" required>
+                    <input type="password" name="" class="confirm-pwd" id="confirm-pwd" required>
+                    <span></span>
                 </div>
             </form>
 
         </div>
             <div class="button-container">
-                <button form="form">Create Account</button>
+                <button form="form" id="button">Create Account</button>
                 <p>Already have an account? Log in</p>
             </div> 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
