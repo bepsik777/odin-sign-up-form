@@ -42,7 +42,7 @@ body {
 
 .logo-banner {
     position: relative;
-    height: 15vh;
+    min-height: 15vh;
     /* border: 1px solid black; */
     margin-top: 31.5%;
     display: flex;
@@ -56,13 +56,14 @@ body {
     color: #fff;
 }
 
+.logo-banner,
 .logo-banner * {
-    flex-shrink: 2;
+    flex-wrap: wrap;
 }
 
 .logo-banner img {
     height: 13vh;
-    margin-left: 3vw;
+    margin-left: 1vw;
 }
 
 
@@ -158,7 +159,7 @@ input:valid:not(#confirm-pwd) {
 }
 
 #pwd:invalid ~ span::after {
-    content: "must be at least 8 characters long";
+    content: "at least 8 characters long";
     font-size: .8rem;
     color: #ff9933;
     margin-left: .1rem;
@@ -210,4 +211,14 @@ button:hover {
 
 .button-container p {
     font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #2aa22a;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
 }

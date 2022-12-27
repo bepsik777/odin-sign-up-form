@@ -7,7 +7,9 @@ console.log(buttons)
 
 buttons.forEach((item) => { 
 item.addEventListener('keyup', (e) => {
-    if(pwdConfirm.value !== pwd.value) {
+    if(pwdConfirm.value === '') {
+        return;
+    } else if(pwdConfirm.value !== pwd.value) {
         button.disabled = true;
         pwdConfirm.setAttribute('class', 'pwdConfirmInvalid')
     } else {
@@ -19,18 +21,6 @@ item.addEventListener('keyup', (e) => {
 })
 })
 
-// pwdConfirm.addEventListener('keyup', (e) => {
-//     if(pwdConfirm.value !== pwd.value) {
-//         button.disabled = true;
-//         pwdConfirm.setAttribute('class', 'pwdConfirmInvalid')
-//     } else {
-//         button.disabled = false;
-//         pwdConfirm.removeAttribute('class', 'pwdConfirmInvalid');
-//         pwdConfirm.setAttribute('class', 'pwdConfirmValid');
-//     } 
 
-// })
 
-console.log(pwd)
-console.log(pwdConfirm)
 
