@@ -147,9 +147,11 @@ input:focus:invalid {
     border: 3px solid #e6005c;
 }
 
-input:valid {
+/*select all input except pwd confirmation because of specificity issues*/
+input:valid:not(#confirm-pwd) { 
     border: 3px solid #339933;
 }
+
 
 #pwd ~ span {
     position: relative;
@@ -165,6 +167,10 @@ input:valid {
 
 .pwdConfirmInvalid {
     border: 3px solid #e6005c;
+}
+
+.pwdConfirmValid {
+    border: 3px solid #339933;
 }
 
 .pwdConfirmInvalid ~ span::after {
