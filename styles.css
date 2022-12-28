@@ -37,28 +37,27 @@ body {
 }
 
 .logo-banner {
-    position: relative;
     min-height: 15vh;
     margin-top: 31.5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     background-color: rgba(26, 0, 13, .3);
-    text-align: center;
     font-family: var(--logo-font);
     font-size: 5rem;
     color: #fff;
 }
 
-.logo-banner,
-.logo-banner * {
-    flex-wrap: wrap;
-}
 
 .logo-banner img {
     height: 13vh;
     margin-left: 1vw;
+}
+
+.logo-banner span {
+    margin-top: 2.5vh;
 }
 
 
